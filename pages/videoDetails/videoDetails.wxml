@@ -1,0 +1,15 @@
+<!--pages/videoDetails/videoDetails.wxml-->
+<liz-video title="美媒统计乔詹GOAT之争各州支持率：MJ26对24稍占上风美媒统计乔詹GOAT之争各州支持率：MJ26对24稍占上风" price="30" />
+
+<view class="info">
+	<text class="txt">
+<text class="b">课程详情：</text>高铁、轮渡、飞机坐了个遍!江苏2月7日新增确诊病例详情通报详情英文视频大全大家都在搜产品详情英文 晚上的英文 详情页设计 详情页英文 商品详情英文详情的英文免高铁、轮渡、飞机坐了个遍!江苏2月7日新增确诊病例详情通报详情英文视频大全大家都在搜产品详情英文 晚上的英文 详情页设计 详情页英文 商品详情英文
+	</text>
+</view>
+
+<view class="title">
+    <text class="tit">评论</text>
+    （1.2万+， 好评度：89%）
+</view>
+
+<liz-comment />

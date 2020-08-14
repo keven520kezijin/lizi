@@ -1,0 +1,17 @@
+/* components/comment/comment.wxss */
+.top {
+    height: 100rpx;
+    background: #ccc;
+    display: flex;
+    padding: 0 40rpx;
+    align-items: center;
+}
+
+.avatar {
+    height: 80rpx;
+    width: 80rpx;
+    border-radius: 40rpx;
+}
+    
+
+

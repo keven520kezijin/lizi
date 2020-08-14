@@ -1,0 +1,10 @@
+<!--pages/publish/publish.wxml-->
+<view class="publish-level">
+	<image class="pub-img" src="../../images/publish-img.jpg" mode="aspectFit"></image>
+	<view class="notice">
+		<text>如果您是企业，希望制作和上传宣传视频；</text>
+		<text>如果您是行业专家，希望制作和上传专业视频；</text>
+		<text>如果您有意拓展业务，希望加入我们的区域代理团队,</text>
+		<text bindtap="callTel">您可以与我们联系：<text class="tel">15021505548</text>。</text>
+	</view>
+</view>

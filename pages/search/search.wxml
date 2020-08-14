@@ -1,0 +1,40 @@
+<!--pages/search/search.wxml-->
+<view class="search-page">
+	<view class="search-level">
+		<view class="search-box">
+			<van-search class="van-search" value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" />
+		</view>
+	</view>
+	<view class="search-main">
+		<view class="search-empty" wx:if="{{false}}">
+			<image src="../../images/empty.jpg" mode="aspectFit"></image>
+			<text class="big-txt">抱歉，没有找到相关的视频</text>
+			<text class="txt">请换一个关键词试试吧</text>
+		</view>
+		<view class="search-history" wx:else>
+      <view class="search-block">
+        <text class="tit">热门搜索</text>
+        <view class="block-tip">
+          <text class="tip">娱乐</text>
+          <text class="tip">伤病考验国安阵容</text>
+          <text class="tip">娱乐</text>
+          <text class="tip">娱乐</text>
+          <text class="tip">娱乐</text>
+          <text class="tip">娱乐</text>
+        </view>
+      </view>
+
+      <view class="search-block">
+        <text class="tit">历史记录</text>
+        <view class="block-tip">
+          <text class="tip">娱乐</text>
+          <text class="tip">伤病考验国安阵容</text>
+          <text class="tip">娱乐</text>
+          <text class="tip">娱乐</text>
+          <text class="tip">娱乐</text>
+          <text class="tip">娱乐</text>
+        </view>
+      </view>
+    </view>
+	</view>
+</view>

@@ -1,0 +1,101 @@
+/* pages/mine/mine.wxss */
+.info-level {
+    height: 140rpx;
+    padding: 0 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-box {
+    flex: 1;
+    margin: 0 20rpx;
+    font-size: 24rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: #999;
+}
+.name {
+    font-size: 36rpx;
+    color: #333;
+}
+.avatar {
+    width: 100rpx;
+    height: 100rpx;
+    background: #900;
+    border-radius: 50rpx;
+}
+
+.nav-level {
+    height: 130rpx;
+    display: flex;
+    border-bottom: 10rpx solid #f7f7f7;
+    padding: 40rpx 30rpx 30rpx;
+}
+
+.item {
+    flex: 1;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item:not(:last-child) {
+    border-right: 1rpx solid #ddd;
+}
+
+.icon-chakan {
+    font-size: 40rpx;
+    margin-top: 10rpx;
+    color: #ff9357;
+}
+
+.icon-dianzan {
+    font-size: 50rpx;
+    color: #ff396d;
+}
+
+.icon-guanzhuxuanzhong {
+    font-size: 70rpx;
+    color: #ffb300;
+    margin-top: -10rpx;
+}
+
+.icon-role-msl {
+    font-size: 50rpx;
+    color: #2fcbbf;
+}
+
+.icon-chongzhi1 {
+    font-size: 50rpx;
+    color: #2fcbbf;
+}
+
+.icon-chongzhi {
+    font-size: 50rpx;
+    color: #ff9358;
+}
+
+.icon-tixian {
+    font-size: 50rpx;
+    color: #ffb200;
+}
+
+.icon-icon-order {
+    font-size: 50rpx;
+    color: #009bff;
+}
+
+.item-txt {
+    font-size: 26rpx;
+}
+
+.tit {
+    padding: 30rpx 40rpx;
+    display: block;
+    font-size: 34rpx;
+}

@@ -1,0 +1,135 @@
+/* components/video.wxss */
+@import "../../utils/iconfont.wxss";
+.video-box {
+  display: block;
+  height: 360rpx;
+  width: 100%;
+  background: #ddd;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120rpx;
+  background: linear-gradient(rgb(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 100%);
+  font-size: 34rpx;
+  color: #fff;
+  padding: 20rpx 40rpx 20rpx;
+}
+
+.title .txt {
+  display: -webkit-box;
+  height: 100rpx;
+  line-height: 50rpx;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.tag {
+  box-sizing: border-box;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 160rpx;
+  border-radius: 30rpx;
+  position: absolute;
+  background: #ff4f00;
+  padding-right: 30rpx;
+  left: -30rpx;
+  bottom: 40rpx;
+  text-align: right;
+  color: #fff;
+}
+
+.tag .fh {
+  font-size: 24rpx;
+  display: inline;
+  padding: 0 10rpx;
+}
+.tag .price {
+  font-size: 34rpx;
+}
+
+.icon-iconfontxiebiji {
+  bottom: 20rpx;
+  right: 20rpx;
+  color: #ffb300;
+  position: absolute;
+}
+
+.num-box {
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40rpx;
+}
+
+.txt-box {
+  display: flex;
+  align-items: center;
+}
+
+.iconfont {
+  color: #cacaca;
+}
+
+.icon-pinglun {
+  font-size: 46rpx;
+  padding: 2rpx 10rpx 0 0;
+}
+
+.icon-chakan {
+  font-size: 30rpx;
+  padding: 2rpx 10rpx 0 0;
+}
+
+.icon-dianzan {
+  font-size: 38rpx;
+  padding: 2rpx 10rpx 0 0;
+}
+
+.icon-zhuanfa00 {
+  font-size: 38rpx;
+  padding: 2rpx 10rpx 0 0;
+}
+
+.info-box {
+  height: 80rpx;
+  display: flex;
+  padding: 0 40rpx;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+
+.name {
+  display: inline-block;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.tip {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 30rpx;
+  border-radius: 30rpx;
+  border: 1px #ddd solid;
+  margin-right: 20rpx;
+  font-size: 24rpx;
+  color: #989898;
+}

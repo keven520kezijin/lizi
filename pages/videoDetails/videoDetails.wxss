@@ -1,0 +1,25 @@
+/* pages/videoDetails/videoDetails.wxss */
+.info {
+    padding: 0 40rpx 40rpx;
+    border-bottom: 10rpx solid #f7f7f7;
+}
+
+.info .txt {
+    font-size: 28rpx;
+    line-height: 30rpx;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.title {
+    padding: 30rpx 40rpx;
+    font-size: 28rpx;
+    display: block;
+}
+
+.title .tit {
+    font-size: 40rpx;
+    display: inline;
+}

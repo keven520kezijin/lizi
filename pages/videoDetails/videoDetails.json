@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "liz-video": "../../components/video/video",
+    "liz-comment": "../../components/comment/comment"
+  }
+}

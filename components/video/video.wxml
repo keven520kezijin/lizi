@@ -1,0 +1,34 @@
+<!--components/video.wxml-->
+<view class="video-box">
+	<view class="title">
+		<text class="txt">{{ title }}</text>
+	</view>
+	<text class="iconfont icon-iconfontxiebiji"></text>
+	<text wx:if="{{price>0}}" class="tag">
+		<text class="fh">¥</text>
+	    <text class="price">{{ price }}</text>
+	</text>
+</view>
+<view class="num-box">
+  <view class="txt-box">
+		<text class="iconfont icon-chakan"></text>
+		<text class="txt">288</text>
+	</view>
+  <view class="txt-box">
+		<text class="iconfont icon-dianzan"></text>
+		<text class="txt">288</text>
+	</view>
+  <view class="txt-box">
+		<text class="iconfont icon-zhuanfa00"></text>
+		<text class="txt">288</text>
+	</view>
+</view>
+
+<view class="info-box">
+  <view class="user-box">
+    <image class="avatar" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2123674828,2466022190&fm=11&gp=0.jpg"></image>
+    <text class="name">平凡之路</text>
+  </view>
+  <text class="tip">唐山大地震</text>
+  <text class="tip">新闻</text>
+</view>

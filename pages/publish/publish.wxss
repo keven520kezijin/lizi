@@ -1,0 +1,36 @@
+/* pages/publish/publish.wxss */
+
+.publish-level {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pub-img {
+    width: 90%;
+}
+
+.notice {
+    box-sizing: border-box;
+    width: 90%;
+    box-shadow: 0 0 8px #e5e9ef;
+    padding: 40rpx;
+    color: #999;
+    margin-top: 40rpx;
+}
+
+.notice text {
+    display: block;
+    line-height: 60rpx;
+    font-size: 26rpx;
+}
+
+.notice text:last-child {
+    display: inline;
+}
+
+.tel {
+    color: #ff9357;
+}
