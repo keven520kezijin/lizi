@@ -1,0 +1,41 @@
+/* components/star/star.wxss */
+@import "../../utils/iconfont.wxss";
+
+.star {
+  width: 200rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-iconfontxingxing {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  font-size: 36rpx;
+  color: #ddd;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 0;
+  left: 0;  
+}
+
+.half {  
+  width: 18rpx;
+  display: block;
+  overflow: hidden;
+}
+
+.highlighter {
+  color: #fea900; 
+}

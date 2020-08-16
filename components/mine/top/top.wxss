@@ -1,0 +1,49 @@
+/* components/mine/top/top.wxss */
+@import "../../../utils/iconfont.wxss";
+
+.info-level {
+  position: relative;
+  height: 140rpx;
+  padding: 0 40rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 10rpx solid #f7f7f7;
+}
+
+.info-level .iconfont {
+    padding-top: 70rpx;
+}
+
+
+.btn1 {
+  position: absolute;
+  top: 6rpx;
+  right: 160rpx;
+}
+
+.btn {
+  position: absolute;
+  top: 6rpx;
+  right: 40rpx;
+}
+
+.info-box {
+  flex: 1;
+  margin: 0 20rpx;
+  font-size: 24rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  color: #999;
+}
+.name {
+  font-size: 36rpx;
+  color: #333;
+}
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}

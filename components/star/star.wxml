@@ -1,0 +1,154 @@
+<!--components/star/star.wxml-->
+<view class="star" wx:if="{{mark === 0}}">
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+<view class="star" wx:if="{{mark === 1}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child half"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+<view class="star" wx:if="{{mark === 2}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+<view class="star" wx:if="{{mark === 3}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child half"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+<view class="star" wx:if="{{mark === 4}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+<view class="star" wx:if="{{mark === 5}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child half"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+
+
+<view class="star" wx:if="{{mark === 6}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+<view class="star" wx:if="{{mark === 7}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child half"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+<view class="star" wx:if="{{mark === 8}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent"></text>
+</view>
+
+<view class="star" wx:if="{{mark === 9}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child half"></text>
+  </text>
+</view>
+
+<view class="star" wx:if="{{mark === 10}}">
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+	</text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+	<text class="iconfont icon-iconfontxingxing parent">
+    <text class="iconfont icon-iconfontxingxing highlighter child"></text>
+  </text>
+</view>
+
+
+
+

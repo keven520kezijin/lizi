@@ -1,4 +1,13 @@
 <!--components/comment/comment.wxml-->
 <view class="top">
     <image class="avatar" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2123674828,2466022190&fm=11&gp=0.jpg"></image>
+    <view class="info">
+        <text class="name">{{ name }}</text>
+        <text class="time">{{ time }}</text>
+    </view>
+    <liz-star mark="{{mark}}"/>
+</view>
+
+<view class="comment-main">
+英语分数的表示法： 一、用“基数词＋序数词”表示 分数在英语中通常是借助于基数词和序数词来共同表达的.其中基数词表示分子,序数词表示分母.英语分数的表示法： 一、用“基数词＋序数词”表示 分数在英语中通常是借助于基数词和序数词来共同表达的.其中基数词表示分子,序数词表示分母.英语分数的表示法： 一、用“基数词＋序数词”表示 分数在英语中通常是借助于基数词和序数词来共同表达的.其中基数词表示分子,序数词表示分母.
 </view>

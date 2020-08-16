@@ -3,7 +3,7 @@
 	<view class="title">
 		<text class="txt">{{ title }}</text>
 	</view>
-	<text class="iconfont icon-iconfontxiebiji"></text>
+	<text wx:if="{{isEdit}}" class="iconfont icon-iconfontxiebiji"></text>
 	<text wx:if="{{price>0}}" class="tag">
 		<text class="fh">¥</text>
 	    <text class="price">{{ price }}</text>
@@ -25,7 +25,7 @@
 </view>
 
 <view class="info-box">
-  <view class="user-box">
+  <view class="user-box" bindtap="toAuth">
     <image class="avatar" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2123674828,2466022190&fm=11&gp=0.jpg"></image>
     <text class="name">平凡之路</text>
   </view>

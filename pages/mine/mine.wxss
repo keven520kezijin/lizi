@@ -1,32 +1,4 @@
 /* pages/mine/mine.wxss */
-.info-level {
-    height: 140rpx;
-    padding: 0 40rpx;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.info-box {
-    flex: 1;
-    margin: 0 20rpx;
-    font-size: 24rpx;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    color: #999;
-}
-.name {
-    font-size: 36rpx;
-    color: #333;
-}
-.avatar {
-    width: 100rpx;
-    height: 100rpx;
-    background: #900;
-    border-radius: 50rpx;
-}
 
 .nav-level {
     height: 130rpx;

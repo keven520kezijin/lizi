@@ -5,9 +5,9 @@ export default {
 	 * @param {Object} param 传递给目标页面的参数
 	 * @description 处理目标页面的参数，转成json字符串传递给param字段，在目标页面通过JSON.parse(options.param)接收
 	 */
-	navigateTo(url, param = {}) {
+	navigateTo(url, param = '') {
 		if (param) {
-			`${url}?param=${JSON.stringify(param)}`
+			url = `${url}?${param}`
 		}
 		wx.navigateTo({
 			url: url,

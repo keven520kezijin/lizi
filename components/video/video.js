@@ -1,4 +1,5 @@
 // components/video.js
+import route from '../../utils/route'
 Component({
   /**
    * 组件的属性列表
@@ -29,6 +30,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    toAuth() {
+      route.navigateTo('/pages/principalSheet/principalSheet', 'authId=8')
+    }
   }
 })

@@ -1,58 +1,51 @@
 <!--pages/mine/mine.wxml-->
-<view class="info-level">
-    <image class="avatar" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2123674828,2466022190&fm=11&gp=0.jpg"></image>
-    <text class="info-box">
-        <text class="name">李世民</text>
-    横跨Java、HTML5前端、大数据、区块链、Python、Android等多个技术方向
-源码级讲解的课程，有广度更有深度，助万千“谷粉”走上了软件开发之路，为众多IT企业技术升级提供了宝贵参考，好评如潮！</text>
-    <text class="iconfont icon-arrow-right"></text>
+<liz-top/>
+<view class="nav-level">
+	<view class="item">
+		<text class="iconfont icon-chakan"></text>
+		<text class="item-txt">观看(180)</text>
+	</view>
+	<view class="item">
+		<text class="iconfont icon-dianzan"></text>
+		<text class="item-txt">观看(180)</text>
+	</view>
+	<view class="item">
+		<text class="iconfont icon-guanzhuxuanzhong"></text>
+		<text class="item-txt">观看(180)</text>
+	</view>
+	<view class="item">
+		<text class="iconfont icon-role-msl"></text>
+		<text class="item-txt">观看(180)</text>
+	</view>
 </view>
 <view class="nav-level">
-    <view class="item">
-        <text class="iconfont icon-chakan"></text>
-        <text class="item-txt">观看(180)</text>
-    </view>
-    <view class="item">
-        <text class="iconfont icon-dianzan"></text>
-        <text class="item-txt">观看(180)</text>
-    </view>
-    <view class="item">
-        <text class="iconfont icon-guanzhuxuanzhong"></text>
-        <text class="item-txt">观看(180)</text>
-    </view>
-    <view class="item">
-        <text class="iconfont icon-role-msl"></text>
-        <text class="item-txt">观看(180)</text>
-    </view>
-</view>
-<view class="nav-level">
-    <view class="item">
-        <text class="iconfont icon-chongzhi1"></text>
-        <text class="item-txt">余额(180)</text>
-    </view>
-    <view class="item">
-        <text class="iconfont icon-chongzhi"></text>
-        <text class="item-txt">充值(180)</text>
-    </view>
-    <view class="item">
-        <text class="iconfont icon-tixian"></text>
-        <text class="item-txt">提现(180)</text>
-    </view>
-    <view class="item">
-        <text class="iconfont icon-icon-order"></text>
-        <text class="item-txt">订单(180)</text>
-    </view>
+	<view class="item">
+		<text class="iconfont icon-chongzhi1"></text>
+		<text class="item-txt">余额(180)</text>
+	</view>
+	<view class="item">
+		<text class="iconfont icon-chongzhi"></text>
+		<text class="item-txt">充值(180)</text>
+	</view>
+	<view class="item">
+		<text class="iconfont icon-tixian"></text>
+		<text class="item-txt">提现(180)</text>
+	</view>
+	<view class="item">
+		<text class="iconfont icon-icon-order"></text>
+		<text class="item-txt">订单(180)</text>
+	</view>
 </view>
 <view class="works-level">
-    <text class="tit">我的作品</text>
-  <liz-video isEdit price="300" />
-  <liz-video isEdit />
-  <liz-video isEdit />
-  <liz-video isEdit />
-  <liz-video isEdit />
-  <liz-video isEdit />
-  <liz-video isEdit />
-  <liz-video isEdit />
-  <liz-video isEdit />
-  <liz-video isEdit />
+	<text class="tit">{{authId===''?'我的':''}}作品</text>
+	<liz-video isEdit="{{authId===''}}" price="300" />
+	<liz-video isEdit="{{authId===''}}"/>
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
 </view>

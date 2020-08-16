@@ -1,0 +1,13 @@
+<!--components/mine/top/top.wxml-->
+<view class="info-level" bindtap="toPrincipalDetail">
+	<block wx:if="{{xqBtn}}">
+		<van-button class="btn1" type="warning" size="mini">关注</van-button>
+		<van-button class="btn" size="mini">联络</van-button>
+	</block>
+	<image class="avatar" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2123674828,2466022190&fm=11&gp=0.jpg"></image>
+	<text class="info-box">
+        <text class="name">李世民 {{authId}}</text>
+	横跨Java、HTML5前端、大数据、区块链、Python、Android等多个技术方向
+	源码级讲解的课程，有广度更有深度，助万千“谷粉”走上了软件开发之路，为众多IT企业技术升级提供了宝贵参考，好评如潮！</text>
+	<text class="iconfont icon-arrow-right" wx:if="authId !== ''"></text>
+</view>

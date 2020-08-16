@@ -90,6 +90,21 @@
 					"id": -1,
 					"name": "pages/videoDetails/videoDetails",
 					"pathName": "pages/videoDetails/videoDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/principalSheet/principalSheet",
+					"pathName": "pages/principalSheet/principalSheet",
+					"query": "authId=8",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/principalDetails/principalDetails",
+					"pathName": "pages/principalDetails/principalDetails",
+					"query": "authId=8",
 					"scene": null
 				}
 			]

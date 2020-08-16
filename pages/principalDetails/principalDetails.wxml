@@ -1,0 +1,16 @@
+<!--pages/principalDetails/principalDetails.wxml-->
+<view class="page">
+  <image class="top-img" src="../../images/bj.jpg"></image>
+  <view class="mc"></view>
+  <image class="avatar" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3715807199,284763637&fm=26&gp=0.jpg"></image>
+  <view class="info">
+    <text class="info-txt">版权方</text>
+    <text class="info-txt">LV11</text>
+    <text class="info-txt">举人</text>
+  </view>
+  <view class="main">
+    <view class="lecturer-name">周立波</view>
+    <text class=""></text>
+  </view>
+</view>
+

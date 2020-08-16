@@ -1,0 +1,15 @@
+<!--pages/mine/mine.wxml-->
+<liz-top xqBtn/>
+<view class="works-level">
+	<text class="tit">作品</text>
+	<liz-video isEdit="{{authId===''}}" price="300" />
+	<liz-video isEdit="{{authId===''}}"/>
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+	<liz-video isEdit="{{authId===''}}" />
+</view>

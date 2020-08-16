@@ -1,7 +1,7 @@
 /* components/comment/comment.wxss */
+@import "../../utils/iconfont.wxss";
 .top {
     height: 100rpx;
-    background: #ccc;
     display: flex;
     padding: 0 40rpx;
     align-items: center;
@@ -12,6 +12,31 @@
     width: 80rpx;
     border-radius: 40rpx;
 }
-    
+
+.info {
+    flex: 1;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20rpx;
+    justify-content: center;
+}
+
+.info .name {
+    font-size: 30rpx;
+    padding-bottom: 10rpx;
+}
+
+.comment-main {
+    padding: 20rpx 40rpx 30rpx;
+    font-size: 28rpx;
+    line-height: 40rpx;
+}
+
+.info .time {
+    font-size: 20rpx;
+}
+   
 
 

@@ -23,3 +23,8 @@
     font-size: 40rpx;
     display: inline;
 }
+
+.comment:not(:last-child) {    
+    border-bottom: 1px #eee solid;
+    margin-bottom: 30rpx;
+}

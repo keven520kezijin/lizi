@@ -4,7 +4,18 @@ Component({
      * 组件的属性列表
      */
     properties: {
-
+        name: {
+            type: "String",
+            value: ""
+        },
+        time: {
+            type: "String",
+            value: "2020-08-15"
+        },
+        mark: {
+            type: "Number",
+            value: 0
+        }
     },
 
     /**
