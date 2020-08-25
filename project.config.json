@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"enhance": false,
 		"postcss": true,
@@ -32,7 +32,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.12.0",
-	"appid": "wx7330917c8305392a",
+	"appid": "wx594ab645c1e207ad",
 	"projectname": "lizi",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -105,6 +105,26 @@
 					"name": "pages/principalDetails/principalDetails",
 					"pathName": "pages/principalDetails/principalDetails",
 					"query": "authId=8",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "视频列表页",
+					"pathName": "pages/videoList/videoList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userEdit/userEdit",
+					"pathName": "pages/userEdit/userEdit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "视频编辑",
+					"pathName": "pages/videoEdit/videoEdit",
 					"scene": null
 				}
 			]

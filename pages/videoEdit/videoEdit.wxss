@@ -1,0 +1,37 @@
+/* pages/videoEdit/videoEdit.wxss */
+
+.isPay {
+    height: 100rpx;
+    line-height: 100rpx;
+    padding-left: 24rpx;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group {
+    height: 160rpx;
+    display: block;
+}
+
+.check-box {
+    height: 32px;
+}
+
+.isPay {
+    padding-right: 40rpx;
+}
+
+.txt {
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    padding-left: 24rpx;
+}
+
+.cover-img {
+    height: 300rpx;
+    width: 100%;
+    background: #900;
+}

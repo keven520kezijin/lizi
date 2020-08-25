@@ -1,5 +1,5 @@
 <!--components/video.wxml-->
-<view class="video-box">
+<view class="video-box" bindtap="toVideo">
 	<view class="title">
 		<text class="txt">{{ title }}</text>
 	</view>

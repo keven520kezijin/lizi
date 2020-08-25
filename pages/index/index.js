@@ -53,7 +53,6 @@ Page({
     })
   },
   toSearch() {
-    console.log('route: ', route)
     route.navigateTo('/pages/search/search')
   }
 })

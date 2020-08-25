@@ -32,6 +32,9 @@ Component({
   methods: {
     toAuth() {
       route.navigateTo('/pages/principalSheet/principalSheet', 'authId=8')
+    },
+    toVideo() {
+      route.navigateTo('/pages/videoDetails/videoDetails', 'authId=8')
     }
   }
 })

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "liz-videoList": "../../components/videoList/videoList"
+  }
+}

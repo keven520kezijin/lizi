@@ -1,0 +1,32 @@
+<!--pages/videoEdit/videoEdit.wxml-->
+<van-nav-bar
+  title="视频编辑"
+/>
+
+<view class="isPay">
+    <text class="label">是否为收费视频</text>
+    <van-switch class="check-box" checked="{{ isPay }}" bind:change="onChange" />
+</view>
+
+<van-cell-group class="form-group">
+  <van-field
+    value="{{ username }}"
+    required
+    clearable
+    label="标题"
+    placeholder="请输入标题"
+  />
+  <van-field
+    wx:if="{{isPay}}"
+    value="{{ username }}"
+    required
+    clearable
+    label="费用(¥)"
+    type="number"
+    placeholder="请输入费用"
+  />
+</van-cell-group>
+
+<text class="txt">上传封面图</text>
+
+<image class="cover-img" bindtap="chooseImg"></image>
