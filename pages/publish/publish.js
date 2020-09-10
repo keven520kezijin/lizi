@@ -1,4 +1,6 @@
 // pages/publish/publish.js
+const util = require('../../utils/util.js');
+const api = require('../../config/api.js');
 Page({
 
   /**
@@ -66,6 +68,24 @@ Page({
   callTel() {
     wx.makePhoneCall({
       phoneNumber: '15021505548'
+    })
+  },
+  uploadFileData() {
+    wx.chooseVideo({
+      count: 10,
+      type: 'image',
+      success (res) {
+        console.log('res: ', res)
+        wx.uploadFile({
+          url: api.videoUpload,
+          filePath: res.tempFilePath,
+          name: 'filename',
+          success(res) {
+            console.log('ok')
+            console.log('suc-res: ', res)
+          }
+        })
+      }
     })
   }
 })

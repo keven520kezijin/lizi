@@ -1,5 +1,6 @@
 <!--components/video.wxml-->
 <view class="video-box">
+	<video class="video" src="{{videoData.video_url}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
 	<view class="title">
 		<text class="txt">{{ title }}</text>
 	</view>

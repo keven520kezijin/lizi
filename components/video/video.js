@@ -5,6 +5,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    videoData: {
+      type:Object,
+      value: null
+    },
     isEdit: {
       type: Boolean,
       value: false
@@ -18,6 +22,11 @@ Component({
       value: ''
     }
   },
+  observers: {
+    videoData(obj) {
+      console.log('obj:', obj)
+    }
+  },
 
   /**
    * 组件的初始数据
@@ -25,7 +34,6 @@ Component({
   data: {
 
   },
-
   /**
    * 组件的方法列表
    */
