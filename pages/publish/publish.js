@@ -1,6 +1,7 @@
 // pages/publish/publish.js
-const util = require('../../utils/util.js');
-const api = require('../../config/api.js');
+import route from '../../utils/route'
+import util from '../../utils/util.js'
+import api from '../../config/api'
 Page({
 
   /**
@@ -82,7 +83,11 @@ Page({
           name: 'filename',
           success(res) {
             console.log('ok')
+            const result = JSON.parse(res.data).result
+            console.log('result: ', result)
+            wx.setStorageSync('result', result);
             console.log('suc-res: ', res)
+            route.navigateTo('/pages/videoEdit/videoEdit')
           }
         })
       }

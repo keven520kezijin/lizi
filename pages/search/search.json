@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "liz-video": "../../components/video/video"
+  }
 }

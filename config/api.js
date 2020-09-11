@@ -1,10 +1,13 @@
 const WxApiRoot = 'http://www.liztrip.com/'
-
-module.exports = {
-  videoQuery: `${WxApiRoot}v1/video`
-}
+let videoPub, videoQuery
+videoQuery = videoPub = `${WxApiRoot}v1/video`
 
 // http://域名/v1/video/upload
+const videoUpload = `${WxApiRoot}v1/video/upload`
+
 module.exports = {
-  videoUpload: `${WxApiRoot}v1/video/upload`
+  videoPub,
+  videoQuery,
+  videoUpload,
+  WxApiRoot
 }

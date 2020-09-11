@@ -1,0 +1,19 @@
+<!--components/videoList/videoList.wxml-->
+<!--index.wxml-->
+<view class="container top-120">
+  <view class="searchBox">
+    <view class="search" bindtap="toSearch">
+      <text class="iconfont icon-sousuo1"></text>
+      <text class="search-txt">搜索视频名称</text>
+    </view>
+  </view>
+  <liz-video title="美媒统计乔詹GOAT之争各州支持率：MJ26对24稍占上风美媒统计乔詹GOAT之争各州支持率：MJ26对24稍占上风"  price="30" />
+  <liz-video />
+  <liz-video />
+  <liz-video />
+  <liz-video />
+  <liz-video />
+  <liz-video />
+  <liz-video />
+</view>
+
