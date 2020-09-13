@@ -5,7 +5,7 @@
 			<van-search class="van-search" value="{{ value }}" placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" />
 		</view>
 	</view>
-	<view class="search-main">
+	<view class="search-main" wx:if="{{!isSearchData}}">
 		<view class="search-empty" wx:if="{{false}}">
 			<image src="../../images/empty.jpg" mode="aspectFit"></image>
 			<text class="big-txt">抱歉，没有找到相关的视频</text>
@@ -15,26 +15,36 @@
       <view class="search-block">
         <text class="tit">热门搜索</text>
         <view class="block-tip">
-          <text class="tip">娱乐</text>
-          <text class="tip">伤病考验国安阵容</text>
-          <text class="tip">娱乐</text>
-          <text class="tip">娱乐</text>
-          <text class="tip">娱乐</text>
-          <text class="tip">娱乐</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
+          <text class="tip" bindtap="searchData">伤病考验国安阵容</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
         </view>
       </view>
 
       <view class="search-block">
         <text class="tit">历史记录</text>
         <view class="block-tip">
-          <text class="tip">娱乐</text>
-          <text class="tip">伤病考验国安阵容</text>
-          <text class="tip">娱乐</text>
-          <text class="tip">娱乐</text>
-          <text class="tip">娱乐</text>
-          <text class="tip">娱乐</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
+          <text class="tip" bindtap="searchData">伤病考验国安阵容</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
+          <text class="tip" bindtap="searchData">娱乐</text>
         </view>
       </view>
     </view>
 	</view>
+  <view class="search-data" wx:else>
+    <liz-video title="美媒统计乔詹GOAT之争各州支持率：MJ26对24稍占上风美媒统计乔詹GOAT之争各州支持率：MJ26对24稍占上风"  price="30" />
+    <liz-video />
+    <liz-video />
+    <liz-video />
+    <liz-video />
+    <liz-video />
+    <liz-video />
+    <liz-video />
+  </view>
 </view>

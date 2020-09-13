@@ -1,4 +1,7 @@
 // pages/publish/publish.js
+import route from '../../utils/route'
+import util from '../../utils/util.js'
+import api from '../../config/api'
 Page({
 
   /**
@@ -66,6 +69,28 @@ Page({
   callTel() {
     wx.makePhoneCall({
       phoneNumber: '15021505548'
+    })
+  },
+  uploadFileData() {
+    wx.chooseVideo({
+      count: 10,
+      type: 'image',
+      success (res) {
+        console.log('res: ', res)
+        wx.uploadFile({
+          url: api.videoUpload,
+          filePath: res.tempFilePath,
+          name: 'filename',
+          success(res) {
+            console.log('ok')
+            const result = JSON.parse(res.data).result
+            console.log('result: ', result)
+            wx.setStorageSync('result', result);
+            console.log('suc-res: ', res)
+            route.navigateTo('/pages/videoEdit/videoEdit')
+          }
+        })
+      }
     })
   }
 })

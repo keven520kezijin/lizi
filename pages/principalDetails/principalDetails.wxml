@@ -1,16 +1,51 @@
 <!--pages/principalDetails/principalDetails.wxml-->
 <view class="page">
-  <image class="top-img" src="../../images/bj.jpg"></image>
-  <view class="mc"></view>
-  <image class="avatar" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3715807199,284763637&fm=26&gp=0.jpg"></image>
-  <view class="info">
-    <text class="info-txt">版权方</text>
-    <text class="info-txt">LV11</text>
-    <text class="info-txt">举人</text>
-  </view>
-  <view class="main">
-    <view class="lecturer-name">周立波</view>
-    <text class=""></text>
-  </view>
+	<image class="top-img" src="../../images/bj.jpg"></image>
+	<view class="mc"></view>
+	<image class="avatar" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3715807199,284763637&fm=26&gp=0.jpg"></image>
+	<view class="info">
+		<text class="info-txt">版权方</text>
+		<text class="info-txt">LV11</text>
+		<text class="info-txt">举人</text>
+	</view>
+	<view class="main">
+		<text class="iconfont icon-xiugai1" bindtap="toUserEdit"></text>
+		<view class="lecturer-name">波多野结衣</view>
+		<text class="txt">认证：音乐频道月度优质主播</text>
+		<text class="txt">本章主要介绍为何要学习WebRTC流媒体服务器开发，以及本门课能为我们带来哪些收获。之后会为大家介绍本课程内容具体安排，最后给出如何学好这门课程的一些学习建议。希望大家都能通过这门课程，学有所成，学有所归。</text>
+		<view class="num-level">
+			<text class="num-b">11</text>
+			<text class="num-x">关注</text>
+			<text class="num-b">36.6万</text>
+			<text class="num-x">粉丝</text>
+			<text class="num-b">450</text>
+			<text class="num-x">陪伴值</text>
+		</view>
+		<view class="super-junior-level">
+			<image class="ds" src="../../images/ds.png"></image>
+			<text class="super-junior-b">大赏榜</text>
+			<text class="super-junior-x">26人已打赏</text>
+			<van-button class="btn" plain hairline round type="primary" size="mini">打赏</van-button>
+			<view class="txj">
+				<image class="txj-img" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597655138200&di=ad6b9a396c387b5e232b506044df1e8b&imgtype=0&src=http%3A%2F%2Fimg1.gtimg.com%2Fent%2Fpics%2Fhv1%2F118%2F79%2F1617%2F105165688.jpg"></image>
+				<image class="txj-img" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3832614209,4167870028&fm=26&gp=0.jpg"></image>
+				<image class="txj-img" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1250174139,3035471356&fm=26&gp=0.jpg"></image>
+			</view>
+		</view>
+
+		<view class="intelligence-level">
+			<text class="intelligence-tit">资质</text>
+			<view class="img-box">
+				<van-uploader class="uploader" file-list="{{ fileList }}" />
+				<!-- <image class="img" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=152153187,4063399646&fm=26&gp=0.jpg" mode="aspectFit"></image>
+        <image class="img" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=725342606,4079258619&fm=26&gp=0.jpg" mode="aspectFit"></image>
+        <image class="img" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2011920520,1158545545&fm=26&gp=0.jpg" mode="aspectFit"></image>
+        <image class="img" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2577136752,1357499895&fm=26&gp=0.jpg" mode="aspectFit"></image> -->
+			</view>
+		</view>
+	</view>
 </view>
 
+<van-dialog use-slot title="编辑个人资料" show="{{ show }}" show-cancel-button confirm-button-open-type="getUserInfo" bind:close="onClose" bind:getuserinfo="getUserInfo">
+		<van-field value="{{ message }}" class="txt-box" type="textarea" placeholder="请填写个人资料" autosize border="{{ false }}" />
+</van-dialog>
