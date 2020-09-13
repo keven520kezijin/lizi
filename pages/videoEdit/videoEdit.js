@@ -10,6 +10,7 @@ Page({
      */
     data: {
         isPay: false,
+        video_tags: '',
         title: '',
         outlay: 0, // 费用
         cover: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1917853737,154946821&fm=26&gp=0.jpg'
@@ -121,7 +122,7 @@ Page({
             video_name: this.data.title,
             video_hash,
             video_url,
-            video_tags: 'lz',
+            video_tags: this.data.video_tags,
             video_image: this.data.cover,
             video_duration,
             video_price: this.data.outlay,

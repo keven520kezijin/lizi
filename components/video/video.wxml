@@ -2,10 +2,10 @@
 <view class="video-box">
 	<video class="video" src="{{videoData.video_url}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
 	<view class="title">
-		<text class="txt">{{ title }}</text>
+		<text class="txt">{{ videoData.video_name }}</text>
 	</view>
 	<text wx:if="{{isEdit}}" class="iconfont icon-iconfontxiebiji"></text>
-	<text wx:if="{{price>0}}" class="tag">
+	<text wx:if="{{videoData.price>0}}" class="tag">
 		<text class="fh">¥</text>
 	    <text class="price">{{ price }}</text>
 	</text>
