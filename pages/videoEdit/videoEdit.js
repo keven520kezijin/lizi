@@ -2,6 +2,7 @@
 import route from '../../utils/route'
 import util from '../../utils/util.js';
 import api from '../../config/api';
+import Toast from '@vant/weapp/toast/toast';
 
 Page({
 
@@ -11,8 +12,10 @@ Page({
     data: {
         isPay: false,
         video_tags: '',
+        show: false,
         title: '',
         outlay: 0, // 费用
+        columns: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
         cover: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1917853737,154946821&fm=26&gp=0.jpg'
     },
 
@@ -84,39 +87,43 @@ Page({
     chooseImg() {
         let _this = this
         wx.chooseImage({
-        count: 1,
-        sizeType: ['original', 'compressed'],
-        sourceType: ['album', 'camera'],
-        success(res) {
-            // tempFilePath可以作为img标签的src属性显示图片
-            const tempFilePaths = res.tempFilePaths
-            console.log('tempFilePaths: ', tempFilePaths)
-            wx.uploadFile({
-            url: `${API.intf.iothost}/api/fastDFS/upload`, //仅为示例，非真实的接口地址
-            filePath: tempFilePaths[0],
-            name: 'file',
-            header: {
-                "Content-Type": "multipart/form-data", //记得设置
-                token: wx.getStorageSync(DBSK.sk_token)
-            },
+            count: 1,
+            sizeType: ['original', 'compressed'],
+            sourceType: ['album', 'camera'],
             success(res) {
-                console.log('chooseImg-res: ', res)
-                if (!res.data.retcode) {
-                console.log('chooseImg-res.data: ', JSON.parse(res.data).data)
-                
-                const obj = _this.data.settings
-                obj.avatar = JSON.parse(res.data).data
-                _this.updateMyProfiles(obj)
-                }
+                // tempFilePath可以作为img标签的src属性显示图片
+                const tempFilePaths = res.tempFilePaths
+                console.log('tempFilePaths: ', tempFilePaths)
+                wx.uploadFile({
+                    url: `${API.intf.iothost}/api/fastDFS/upload`, //仅为示例，非真实的接口地址
+                    filePath: tempFilePaths[0],
+                    name: 'file',
+                    header: {
+                        "Content-Type": "multipart/form-data", //记得设置
+                        token: wx.getStorageSync(DBSK.sk_token)
+                    },
+                    success(res) {
+                        console.log('chooseImg-res: ', res)
+                        if (!res.data.retcode) {
+                            console.log('chooseImg-res.data: ', JSON.parse(res.data).data)
+
+                            const obj = _this.data.settings
+                            obj.avatar = JSON.parse(res.data).data
+                            _this.updateMyProfiles(obj)
+                        }
+                    }
+                })
             }
-            })
-        }
         })
     },
 
     uploadVideo() {
         console.log('data: ', this)
-        const {file_sha1:video_hash, file_url:video_url, video_duration} = wx.getStorageSync('result')
+        const {
+            file_sha1: video_hash,
+            file_url: video_url,
+            video_duration
+        } = wx.getStorageSync('result')
         // return
         const data = {
             video_name: this.data.title,
@@ -135,8 +142,37 @@ Page({
         util.request(api.videoPub, data, 'post').then((res) => {
             console.log('res: ', res)
             this.setData({
-              videoList: res.result.rows
+                videoList: res.result.rows
             })
-          })
+        })
+    },
+
+    showPopup() {
+        this.setData({
+            show: true
+        });
+    },
+
+    onClose() {
+        this.setData({
+            show: false
+        });
+    },
+
+    onConfirm(event) {
+        const {
+            picker,
+            value,
+            index
+        } = event.detail;
+        this.setData({
+            show: false
+        });
+        Toast({
+            message: '加载中...',
+            forbidClick: true,
+            selector: '#custom-selector',
+            context: this
+          });
     }
 })

@@ -52,7 +52,11 @@
         "van-cell-group": "@vant/weapp/cell-group/index",
         "van-nav-bar": "@vant/weapp/nav-bar/index",
         "van-uploader": "@vant/weapp/uploader/index",
-        "van-switch": "@vant/weapp/switch/index"
+        "van-switch": "@vant/weapp/switch/index",
+        "van-popup": "@vant/weapp/popup/index",
+        "van-picker": "@vant/weapp/picker/index"
+
+
     },
     "sitemapLocation": "sitemap.json"
 }
